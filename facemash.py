@@ -4,7 +4,7 @@ import random
 if 'contador' not in st.session_state:
     st.session_state.contador = 0
 
-imagens = ['andre.jpg', 'dexter.webp', 'doakes.jpg', 'ben.webp', 'spider.jpg', 'hulk.png', 'ironman.png', 'patria.jpg', 'flash.jpg', 'batmangoat.webp','lulapreso.webp', 'wonder.jpg',  'superman.jpg', 'coringa.jpg', 'deadpool.jpg', 'onzesigma.jpg', 'messi.jpg', 'popocris.jpg', 'diddy.gif', 'pretog.jpg', 'gatocinza.png', 'mark.jpg', 'kirk.jpg', 'jarvis.jpeg', 'trump.jpg', 'salsicha.jpg', 'eita.jpg', 'tigrao.jpg', 'cavalo.jpg', 'sla.jpg', 'ronaldo.jpg', 'dino.jpg', 'mem.jpg']
+imagens = ['andre.jpg', 'dexter.webp', 'doakes.jpg', 'ben.webp', 'spider.jpg', 'hulk.png', 'ironman.png', 'patria.jpg', 'flash.jpg', 'batmangoat.webp','lulapreso.webp', 'wonder.jpg',  'superman.jpg', 'coringa.jpg', 'deadpool.jpg', 'onzesigma.jpg', 'messi.jpg', 'popocris.jpg', 'pretog.jpg', 'gatocinza.png', 'mark.jpg', 'kirk.jpg', 'jarvis.jpeg', 'trump.jpg', 'salsicha.jpg', 'eita.jpg', 'tigrao.jpg', 'cavalo.jpg', 'sla.jpg', 'ronaldo.jpg', 'dino.jpg', 'mem.jpg']
 
 
 
@@ -33,4 +33,5 @@ st.write(f'Partidas jogadas: {st.session_state.contador}')
 if st.session_state.contador == 20 and 100 and 500:
     st.write('Parabens você julgou +20 duelos!')
     st.balloons()
+
 
