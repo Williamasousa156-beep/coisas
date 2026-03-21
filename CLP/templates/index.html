@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+   
+    .msg-clara { background-color: #c4c1c1; padding: 5px; }
+
+    .msg-cinza { color: white;
+        background-color: #ffffff; padding: 5px; }
+
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: darkred;
+    height: 100px;
+    font-weight: 100px;
+    font-size: 90px;
+   
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 200px;
+}
+hr {
+    background-color: rgb(0, 0, 0)
+}
+li 
+{
+    background-color: rgb(221, 217, 217);
+    color: rgb(14, 13, 13);
+    
+}
+div {
+    margin: 20px;
+}
+</style>
+    <title>My House Message</title>
+    
+</head>
+<body>
+    <h1>M.H.M</h1>
+    <div>
+    <form action="" method="post">
+        <p>Mensagem: <input type="text" name="message" id="">
+        <input type="submit" value="Enviar"></p>
+    </form>
+    <ul>
+    {% for mensagem in msg %}
+        <li class="{{ 'msg-cinza' if loop.index is even else 'msg-clara' }}">
+            {{ mensagem }}
+        </li>
+    {% endfor %}
+</ul>
+   
+</div>
+</body>
+</html>
